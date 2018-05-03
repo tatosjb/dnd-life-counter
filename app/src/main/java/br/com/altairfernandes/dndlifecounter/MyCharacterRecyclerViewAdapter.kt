@@ -43,7 +43,7 @@ class MyCharacterRecyclerViewAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mValues[position]
         holder.nameView.text = item.name
-        holder.totalPVView.text = item.totalPV.toString()
+        holder.totalPVView.text = "PV Total:" + item.totalPV.toString()
         holder.actualPVView.text = item.actualPV.toString()
 
         with(holder.mView) {
